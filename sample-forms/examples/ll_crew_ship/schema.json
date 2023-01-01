@@ -1,0 +1,222 @@
+{
+  "type": "object",
+  "properties": {
+    "vorname": {
+      "type": "string"
+    },
+    "nachname": {
+      "type": "string"
+    },
+    "spitzname": {
+      "type": "string"
+    },
+    "pronomen": {
+      "type": "string",
+      "oneOf": [
+        { "const": "she", "title": "she/her" },
+        { "const": "he", "title": "he/him" },
+        { "const": "they", "title": "they/them" }
+      ]
+    },
+    "geburtsdatum": {
+      "type": "string",
+      "format": "date"
+    },
+    "geburtsort": {
+      "type": "string"
+    },
+    "telefonnummer": {
+      "type": "string"
+    },
+    "e-mail": {
+      "type": "string"
+    },
+    "adresse": {
+      "type": "object",
+      "properties": {
+        "straße": {
+          "type": "string"
+        },
+        "hausnummer": {
+          "type": "string"
+        },
+        "postleitzahl": {
+          "type": "string",
+          "maxLength": 5
+        },
+        "stadt": {
+          "type": "string"
+        },
+        "land": {
+          "type": "string"
+        }
+      }
+    },
+    "nationalität": {
+      "type": "string"
+    },
+    "einsatzzeiträume": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "oneOf": [
+          { "const": "m8", "title": "M8/RA23: 04.04. - 04.05.2023" },
+          { "const": "m9", "title": "M9/RA23: 19.05. - 18.06.2023" },
+          { "const": "m10", "title": "M10/RA23: 02.07. - 31.07.2023" },
+          { "const": "m11", "title": "M11/RA23: 08.08. - 08.09.2023" },
+          { "const": "m12", "title": "M12/RA23: 23.09. - 23.10.2023" },
+          { "const": "m13", "title": "M13/RA23: 28.10. - 26.11.2023" },
+          { "const": "m14", "title": "M14/RA23: 03.12. - 31.12.2023" }
+        ]
+      }
+    },
+    "einsatzzeiträume_sonstige": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "properties": {
+          "von": {
+            "type": "string",
+            "format": "date"
+	  },
+          "bis": {
+            "type": "string",
+            "format": "date"
+	  }
+        }
+      }
+    },
+    "position": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "oneOf": [
+          { "const": "Kapitän*in" },
+          { "const": "Offizier*in" },
+          { "const": "Einsatzleiter*in" },
+          { "const": "Maschinist*in" },
+          { "const": "Schiffselektriker*in / ITler*in" },
+          { "const": "Mediziner*in" },
+          { "const": "RHIB Fahrer*in" },
+          { "const": "Medienkoordinator*in" },
+          { "const": "Küche" }
+        ]
+      }
+    },
+    "nautische_qualifikationen": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "oneOf": [
+          { "const": "Funk SRC" },
+          { "const": "Funk LRC" },
+          { "const": "Seediensttauglichkeitszeugnis" },
+          { "const": "Sportbootführerschein" },
+          { "const": "Sportküstenschifferschein" },
+          { "const": "Sportseeschifferschein" },
+          { "const": "Sporthochseeschifferschein" }
+        ]
+      }
+    },
+    "befähigungszeugnisse": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "oneOf": [
+          { "const": "STCW Basic Safety" },
+          { "const": "Kapitänspatent" },
+          { "const": "techn. Wachoffizier*in" },
+          { "const": "2. techn. Wachoffizier*n" },
+          { "const": "Schiffsmaschinist*in (bis 750kW)" },
+          { "const": "nautische*r Wachoffizier*in" },
+          { "const": "Wachgänger*in" }
+        ]
+      }
+    },
+    "englisch": {
+      "type": "string",
+      "oneOf": [
+        { "const": "A1" },
+        { "const": "A2" },
+        { "const": "B1" },
+        { "const": "B2" },
+        { "const": "C1" },
+        { "const": "C2" }
+      ]
+    },
+    "deutsch": {
+      "type": "string",
+      "oneOf": [
+        { "const": "A1" },
+        { "const": "A2" },
+        { "const": "B1" },
+        { "const": "B2" },
+        { "const": "C1" },
+        { "const": "C2" }
+      ]
+    },
+    "französisch": {
+      "type": "string",
+      "oneOf": [
+        { "const": "A1" },
+        { "const": "A2" },
+        { "const": "B1" },
+        { "const": "B2" },
+        { "const": "C1" },
+        { "const": "C2" }
+      ]
+    },
+    "arabisch": {
+      "type": "string",
+      "oneOf": [
+        { "const": "A1" },
+        { "const": "A2" },
+        { "const": "B1" },
+        { "const": "B2" },
+        { "const": "C1" },
+        { "const": "C2" }
+      ]
+    },
+    "spanisch": {
+      "type": "string",
+      "oneOf": [
+        { "const": "A1" },
+        { "const": "A2" },
+        { "const": "B1" },
+        { "const": "B2" },
+        { "const": "C1" },
+        { "const": "C2" }
+      ]
+    },
+    "italienisch": {
+      "type": "string",
+      "oneOf": [
+        { "const": "A1" },
+        { "const": "A2" },
+        { "const": "B1" },
+        { "const": "B2" },
+        { "const": "C1" },
+        { "const": "C2" }
+      ]
+    },
+    "seeerfahrung": {
+      "type": "string"
+    },
+    "medizinischen_qualifikationen": {
+      "type": "string"
+    },
+    "einsatzerfahrungen": {
+      "type": "string"
+    },
+    "sonstige_erfahrungen": {
+      "type": "string"
+    },
+    "motivation": {
+      "type": "string"
+    },
+    "persönliche_nachricht": {
+      "type": "string"
+    }
+  } 
+}

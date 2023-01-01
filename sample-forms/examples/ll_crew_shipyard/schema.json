@@ -1,0 +1,223 @@
+{
+  "type": "object",
+  "properties": {
+    "anrede": {
+      "type": "string"
+    },
+    "vorname": {
+      "type": "string"
+    },
+    "nachname": {
+      "type": "string"
+    },
+    "geburtsdatum": {
+      "type": "string",
+      "format": "date"
+    },
+    "geburtsort": {
+      "type": "string"
+    },
+    "telefonnummer": {
+      "type": "string"
+    },
+    "e-mail": {
+      "type": "string"
+    },
+    "adresse": {
+      "type": "object",
+      "properties": {
+        "straße": {
+          "type": "string"
+        },
+        "hausnummer": {
+          "type": "string"
+        },
+        "postleitzahl": {
+          "type": "string",
+          "maxLength": 5
+        },
+        "stadt": {
+          "type": "string"
+        },
+        "land": {
+          "type": "string"
+        }
+      }
+    },
+    "nationalität": {
+      "type": "string"
+    },
+    "familienstand": {
+      "type": "string"
+    },
+    "vegie": {
+      "type": "string",
+      "oneOf": [
+        { "const": "vegetarisch" },
+        { "const": "vegan" }
+      ]
+    },
+    "unverträglichkeiten": {
+      "type": "string"
+    },
+    "medikamente": {
+      "type": "string"
+    },
+    "besonderheiten": {
+      "type": "string"
+    },
+    "führerschein": {
+      "type": "boolean"
+    },
+    "führerschein_klassen": {
+      "type": "string"
+    },
+    "position": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "oneOf": [
+          { "const": "Köchin, Koch" },
+          { "const": "Machinist*in" },
+          { "const": "Schiffs-Elektrik" },
+          { "const": "IT (Linux)" },
+          { "const": "Schweißer*in/ Metallbauer*in" },
+          { "const": "Tischler*in/ Zimmer*in" },
+          { "const": "Bootsbauer*in" },
+          { "const": "Helfer*in" },
+          { "const": "Lackierer*in" },
+          { "const": "Social Media" },
+          { "const": "Landkoordination" },
+          { "const": "Logistik" }
+        ]
+      }
+    },
+    "zeiträume": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "properties": {
+          "von": {
+            "type": "string",
+            "format": "date"
+	  },
+          "bis": {
+            "type": "string",
+            "format": "date"
+	  }
+        }
+      }
+    },
+    "vorerfahrung_lifeline": {
+      "type": "boolean"
+    },
+    "vorerfahrung_als": {
+      "type": "string"
+    },
+    "hintergrund": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "properties": {
+          "von": {
+            "type": "string",
+            "format": "date"
+	  },
+          "bis": {
+            "type": "string",
+            "format": "date"
+	  },
+          "projekt": {
+            "type": "string"
+	  },
+          "position": {
+            "type": "string"
+	  }
+        }
+      }
+    },
+    "maschinen_erfahrung": {
+      "type": "string"
+    },
+    "englisch": {
+      "type": "string",
+      "oneOf": [
+        { "const": "A1" },
+        { "const": "A2" },
+        { "const": "B1" },
+        { "const": "B2" },
+        { "const": "C1" },
+        { "const": "C2" }
+      ]
+    },
+    "deutsch": {
+      "type": "string",
+      "oneOf": [
+        { "const": "A1" },
+        { "const": "A2" },
+        { "const": "B1" },
+        { "const": "B2" },
+        { "const": "C1" },
+        { "const": "C2" }
+      ]
+    },
+    "französisch": {
+      "type": "string",
+      "oneOf": [
+        { "const": "A1" },
+        { "const": "A2" },
+        { "const": "B1" },
+        { "const": "B2" },
+        { "const": "C1" },
+        { "const": "C2" }
+      ]
+    },
+    "arabisch": {
+      "type": "string",
+      "oneOf": [
+        { "const": "A1" },
+        { "const": "A2" },
+        { "const": "B1" },
+        { "const": "B2" },
+        { "const": "C1" },
+        { "const": "C2" }
+      ]
+    },
+    "spanisch": {
+      "type": "string",
+      "oneOf": [
+        { "const": "A1" },
+        { "const": "A2" },
+        { "const": "B1" },
+        { "const": "B2" },
+        { "const": "C1" },
+        { "const": "C2" }
+      ]
+    },
+    "italienisch": {
+      "type": "string",
+      "oneOf": [
+        { "const": "A1" },
+        { "const": "A2" },
+        { "const": "B1" },
+        { "const": "B2" },
+        { "const": "C1" },
+        { "const": "C2" }
+      ]
+    },
+    "einsatzerfahrungen": {
+      "type": "string"
+    },
+    "sonstige_erfahrungen": {
+      "type": "string"
+    },
+    "motivation": {
+      "type": "string"
+    },
+    "persönliche_nachricht": {
+      "type": "string"
+    }
+  } 
+}

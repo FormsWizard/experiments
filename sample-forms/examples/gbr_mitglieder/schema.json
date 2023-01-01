@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "properties": {
+    "vorname": {
+      "type": "string"
+    },
+    "nachname": {
+      "type": "string"
+    },
+    "adresse": {
+      "type": "object",
+      "properties": {
+        "straße": {
+          "type": "string"
+        },
+        "hausnummer": {
+          "type": "string"
+        },
+        "postleitzahl": {
+          "type": "string",
+          "maxLength": 5
+        },
+        "stadt": {
+          "type": "string"
+        }
+      }
+    },
+    "geburtsort": {
+      "type": "string"
+    },
+    "geburtsdatum": {
+      "type": "string",
+      "format": "date"
+    },
+    "steuerid": {
+      "type": "string",
+      "maxLength": 14
+    },
+    "steuernummer": {
+      "type": "string",
+      "maxLength": 11
+    },
+    "github_repo": {
+      "type": "string"
+    }
+  }
+}

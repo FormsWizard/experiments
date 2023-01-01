@@ -1,0 +1,14 @@
+{
+ "vorname": "Max",
+ "nachname": "Mustermensch",
+ "adresse": {
+  "straße": "Dresdner Str.",
+  "hausnummer": "42",
+  "postleitzahl": "01234",
+  "stadt": "Berlin"
+ },
+ "geburtsdatum": "1970-01-01",
+ "geburtsort": "Karl-Marx-Stadt",
+ "steuerid": "23 123 456 789",
+ "steuernummer": "201/345/678"
+}

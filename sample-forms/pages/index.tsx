@@ -16,7 +16,7 @@ import examples from '../examples'
 
 export default function Page() {
 
-  const [exampleName, setExampleName] = useState(Object.keys(examples)[0])
+  const [exampleName, setExampleName] = useState(Object.keys(examples)[2])
   const [example, setExample] = useState((examples as any)[exampleName])
 
   const [schema, setSchema] = useState(example.schema)

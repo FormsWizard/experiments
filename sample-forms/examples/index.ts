@@ -5,6 +5,7 @@ import ll_crew_ship_data from './ll_crew_ship/data.json'
 import ll_crew_shipyard_schema from './ll_crew_shipyard/schema.json'
 import ll_crew_shipyard_data from './ll_crew_shipyard/data.json'
 import gbr_mitglieder_schema from './gbr_mitglieder/schema.json'
+import gbr_mitglieder_uischema from './gbr_mitglieder/uischema.json'
 import gbr_mitglieder_data from './gbr_mitglieder/data.json'
 
 const examples = { ll_crew_ship: {
@@ -19,7 +20,8 @@ const examples = { ll_crew_ship: {
                    },
 		   gbr_mitglieder: {
                      "schema": gbr_mitglieder_schema,
-                     "data": gbr_mitglieder_data
+                     "data": gbr_mitglieder_data,
+                     "uischema": gbr_mitglieder_uischema
                    },
                    ...officialExamples }
 

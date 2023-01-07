@@ -40,6 +40,9 @@
       "type": "string",
       "maxLength": 11
     },
+    "insolvent": {
+      "type": "boolean"
+    },
     "github_repo": {
       "type": "string"
     }

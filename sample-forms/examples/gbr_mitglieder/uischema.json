@@ -1,0 +1,78 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "Categorization",
+      "elements": [
+        {
+          "type": "Category",
+          "label": "Personal",
+          "elements": [
+            {
+              "type": "Group",
+              "label": "Personal",
+              "elements": [
+                {
+                  "type": "HorizontalLayout",
+                  "elements": [
+                    {
+                      "type": "Control",
+                      "label": false,
+                      "scope": "#/properties/vorname"
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/nachname"
+                    }
+                  ]
+                },
+                {
+                  "type": "Control",
+                  "scope": "#/properties/geburtsort"
+                },
+                {
+                  "type": "Control",
+                  "scope": "#/properties/geburtsdatum"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Category",
+          "label": "Addresse",
+          "elements": [
+            {
+              "type": "Control",
+              "scope": "#/properties/adresse"
+            }
+          ]
+        },
+        {
+          "type": "Category",
+          "label": "Finance",
+          "elements": [
+            {
+              "type": "Group",
+              "label": "Finance",
+              "elements": [
+                {
+                  "type": "Control",
+                  "scope": "#/properties/steuernummer"
+                },
+                {
+                  "type": "Control",
+                  "scope": "#/properties/steuerid"
+                },
+                {
+                  "type": "Control",
+                  "scope": "#/properties/insolvent"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

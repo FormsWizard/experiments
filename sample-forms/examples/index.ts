@@ -14,7 +14,8 @@ const examples = { ll_crew_ship: {
                      "data": ll_crew_ship_data
                    },
                    ll_crew_shipyard: {
-                     // https://mission-lifeline.de/wp-content/uploads/2022/01/Werft_FragebogenJan2022.pdf
+                     // old: https://mission-lifeline.de/wp-content/uploads/2022/01/Werft_FragebogenJan2022.pdf
+	             // new: https://mission-lifeline.de/mitmachen/werft-crew/  
                      "schema": ll_crew_shipyard_schema,
                      "data": ll_crew_shipyard_data
                    },
